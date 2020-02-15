@@ -23,8 +23,8 @@ And I usually write an extra call function to call this *SSKM*, as follows:
 *  lb:Label of the data.
 *  index:Cross-validation sample.
 *  fs:Calculation of parameters.
-*  - K:Final number of features.
-*  - stop_thr:Threshold to stop.
+*   K:Final number of features.
+*   stop_thr:Threshold to stop.
 ---
     SSKM <- function(I,SM,MI,K,SF_id = NULL,stop_thr)
 *  I:Row data table.

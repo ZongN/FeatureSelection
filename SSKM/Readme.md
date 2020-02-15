@@ -26,9 +26,9 @@ And I usually write an extra call function to call this *SSKM*, as follows:
 *  fs:Calculation of parameters.
 *   ⓐ K:Final number of features.
 *   ⓑ stop_thr:Threshold to stop.
-
+'''js
     SSKM <- function(I,SM,MI,K,SF_id = NULL,stop_thr)
-    
+''''    
 *  I:Row data table.
 *  SM:Similarity measure of the features.
 *  MI:Mutual information of each features and label.

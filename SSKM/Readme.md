@@ -8,4 +8,7 @@ A supervised similarity-based k-medoids (SSKM) clustering algorithm is proposed 
 * INSPEC Accession Number: 14851587
 * DOI: 10.1109/ICMLC.2014.7009669
 ---
-I wrote the Ouyang's algorithm in R language. And added some improvements.
+I wrote the Ouyang's algorithm in R language, and added some improvements.
+The main function is as follows:
+
+    SSKM2 <- function(I,SM,MI,K,SF_id = NULL,StopOption,stop_thr)

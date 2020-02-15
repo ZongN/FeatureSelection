@@ -13,14 +13,23 @@ The main function is as follows:
     SSKM <- function(I,SM,MI,K,SF_id = NULL,StopOption,stop_thr)
 And I usually write an extra call function to call this *SSKM*, as follows:
     CallFASSKM <- function(dt,lb,index,fs)
-#### Parameter:
+### Parameter:
     CallFASSKM <- function(dt,lb,index,fs)
     # dt:Row data table,X axis are the features, Y axis is the sample.
     # lb:Label of the data.
     # index:Cross-validation sample.
     # fs:Calculation of parameters.
-    # -
-#### Process:
+    # - K:Final number of features.
+    # - stop_thr:Threshold to stop.
+---
+    SSKM <- function(I,SM,MI,K,SF_id = NULL,stop_thr)
+    # I:Row data table.
+    # SM:Similarity measure of the features.
+    # MI:Mutual information of each features and label.
+    # K:Final number of features.
+    # SF_id:The medoids of the first round, if NULL then it will pick in random.
+    # stop_thr:Threshold to stop.
+### Process:
 *CallFASSKM* ▶ *SSKM* ▶ *Select results*
 
 

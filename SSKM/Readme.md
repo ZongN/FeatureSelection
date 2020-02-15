@@ -9,26 +9,27 @@ A supervised similarity-based k-medoids (SSKM) clustering algorithm is proposed 
 * DOI: 10.1109/ICMLC.2014.7009669
 ---
 I wrote the Ouyang's algorithm in R language, and added some improvements.
+
 The main function is as follows:
     SSKM <- function(I,SM,MI,K,SF_id = NULL,StopOption,stop_thr)
 And I usually write an extra call function to call this *SSKM*, as follows:
     CallFASSKM <- function(dt,lb,index,fs)
 ### Parameter:
     CallFASSKM <- function(dt,lb,index,fs)
-* dt:Row data table,X axis are the features, Y axis is the sample.
-* lb:Label of the data.
-* index:Cross-validation sample.
-* fs:Calculation of parameters.
-* - K:Final number of features.
-* - stop_thr:Threshold to stop.
+*  dt:Row data table,X axis are the features, Y axis is the sample.
+*  lb:Label of the data.
+*  index:Cross-validation sample.
+*  fs:Calculation of parameters.
+*  - K:Final number of features.
+*  - stop_thr:Threshold to stop.
 ---
     SSKM <- function(I,SM,MI,K,SF_id = NULL,stop_thr)
-* I:Row data table.
-* SM:Similarity measure of the features.
-* MI:Mutual information of each features and label.
-* K:Final number of features.
-* SF_id:The medoids of the first round, if NULL then it will pick in random.
-* stop_thr:Threshold to stop.
+*  I:Row data table.
+*  SM:Similarity measure of the features.
+*  MI:Mutual information of each features and label.
+*  K:Final number of features.
+*  SF_id:The medoids of the first round, if NULL then it will pick in random.
+*  stop_thr:Threshold to stop.
 ### Process:
 *CallFASSKM* ▶ *SSKM* ▶ *Select results*
 

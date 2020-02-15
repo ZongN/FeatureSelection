@@ -16,11 +16,11 @@ The main function is as follows:
 ```   
 And I usually write an extra call function to call this *SSKM*, as follows:
 ```js
-    CallFASSKM <- function(dt,lb,index,fs)
+    CallSSKM <- function(dt,lb,index,fs)
 ```    
 ### Parameter:
 ```js
-    CallFASSKM <- function(dt,lb,index,fs)
+    CallSSKM <- function(dt,lb,index,fs)
 ```
 
 *  dt:Row data table,X axis are the features, Y axis is the sample.
@@ -42,6 +42,6 @@ And I usually write an extra call function to call this *SSKM*, as follows:
 *  stop_thr:Threshold to stop.
 ---
 ### Process:
-*CallFASSKM* ▶ *SSKM* ▶ *Select results*
+*CallSSKM* ▶ *SSKM* ▶ *Select results*
 
 

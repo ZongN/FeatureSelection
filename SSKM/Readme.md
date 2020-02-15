@@ -11,9 +11,12 @@ A supervised similarity-based k-medoids (SSKM) clustering algorithm is proposed 
 I wrote the Ouyang's algorithm in R language, and added some improvements.
 
 The main function is as follows:
+
     SSKM <- function(I,SM,MI,K,SF_id = NULL,StopOption,stop_thr)
 And I usually write an extra call function to call this *SSKM*, as follows:
+
     CallFASSKM <- function(dt,lb,index,fs)
+    
 ### Parameter:
     CallFASSKM <- function(dt,lb,index,fs)
 *  dt:Row data table,X axis are the features, Y axis is the sample.

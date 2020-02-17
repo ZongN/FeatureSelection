@@ -7,6 +7,8 @@ Through the classification results, we can understand the quality of the feature
 
 *Some features selection methods are call the R package [*mRMRe*](https://www.rdocumentation.org/packages/mRMRe/versions/1.0.1/topics/mRMR.classic " mRMRe v1.0.1"), and matlab code [*OMICFS*](https://github.com/lhqxinghun/bioinformatics/tree/master/OMICFS "Git-OMICFS")*
 
+![](https://img.shields.io/badge/R-3.5.3-blue) ![](https://img.shields.io/badge/caret-6.0--82-blue) ![](https://img.shields.io/badge/doParallel-1.0.14-blue) ![](https://img.shields.io/badge/e1071-1.7--2-blue) ![](https://img.shields.io/badge/foreach-1.4.4-blue) ![](https://img.shields.io/badge/mRMRe-2.0.9-blue)
+
 ---
 ## Feature Selection Methods:
 * SSKM
@@ -46,5 +48,4 @@ In this package, input is the row data include features(X axis), smaple(Y axis) 
     1. Passing FS parameters
   - Classifier:
     1. Passing CF parameters
-
-![](https://img.shields.io/badge/R-3.5.3-blue) ![](https://img.shields.io/badge/caret-6.0--82-blue) ![](https://img.shields.io/badge/doParallel-1.0.14-blue) ![](https://img.shields.io/badge/e1071-1.7--2-blue) ![](https://img.shields.io/badge/foreach-1.4.4-blue) ![](https://img.shields.io/badge/mRMRe-2.0.9-blue)
+    

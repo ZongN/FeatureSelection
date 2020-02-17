@@ -27,7 +27,6 @@ The similar matrix table of the features can be calculated from this function *S
 ```js
     CallSSKM <- function(dt,lb,index,fs)
 ```
-Similar matrix of the features
 *  dt:Row data table,X axis are the features, Y axis is the sample.
 *  lb:Label of the data.
 *  index:Cross-validation sample.

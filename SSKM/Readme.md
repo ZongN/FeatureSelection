@@ -23,6 +23,7 @@ The similar matrix table of the features can be calculated from this function *S
 ```js
     SupSim <- function(X,Y)
 ```
+---
 ### Parameter:
 ```js
     CallSSKM <- function(dt,lb,index,fs)

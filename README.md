@@ -26,7 +26,7 @@ In this package, input is the row data include features(X axis), smaple(Y axis) 
 ### Proccess
 *Main function* ▶ *Evaluate* ▶ *Callfunction(feature selsction)* ▶ *Callfunction(classifier)* ▶ *Result*
 
-#### Function Job
+### Function Job
 * Main:
   1. Read data
   2. Setting the parameters of feature selection(FS)
@@ -45,3 +45,5 @@ In this package, input is the row data include features(X axis), smaple(Y axis) 
     1. Passing FS parameters
   - Classifier:
     1. Passing CF parameters
+
+![](https://img.shields.io/badge/R-3.5.3-blue) ![](https://img.shields.io/badge/caret-6.0--82-blue) ![](https://img.shields.io/badge/doParallel-1.0.14-blue) ![](https://img.shields.io/badge/e1071-1.7--2-blue) ![](https://img.shields.io/badge/foreach-1.4.4-blue) ![](https://img.shields.io/badge/mRMRe-2.0.9-blue)

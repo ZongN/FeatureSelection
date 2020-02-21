@@ -17,6 +17,8 @@ Then add the feature selection method into *envfs*, and add the classifier metho
 
 Next , set the *OuterRound*、*P*、*K* and the cores number *cl*
 
+#### *The parameter description can refer to the previous Readme.*
+
 #### *It's recommended not to use all core executions.*
 
 After all, run the *Evaluate.R*.

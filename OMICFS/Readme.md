@@ -5,11 +5,13 @@ A filter feature selection technique has been widely used to mine biomedical dat
 * PMID: 28850898
 * DOI: 10.1016/j.compbiomed.2017.08.021
 ---
+![](https://img.shields.io/badge/OMICFS-Github-blue) ![](https://img.shields.io/badge/matlabr-v1.5.2-brightgreen) ![](https://img.shields.io/badge/multiplex%20-v1.0-brightgreen) 
+
 There is the source code on Github, but it's programmed in *Matlab*. So I call the OMICFS through R package [*matlabr*](https://www.rdocumentation.org/packages/matlabr/versions/1.5.2).
 
 In *matlabr*, we need to pass the parameters by using read-write files.
 
-And there is a *CallOMICFS* in evaluate folder.[Here](https://github.com/ZongN/FeatureSelection/blob/master/Evaluate/CallOMICFS.R)
+And there is a *CallOMICFS* in evaluate folder. [Here](https://github.com/ZongN/FeatureSelection/blob/master/Evaluate/CallOMICFS.R)
 
 In *CallOMICFS*, you can see that most of them are reading and writing file for pass parameters. As follows:
 ```js
@@ -26,6 +28,7 @@ The parameters will be written to this folder from *CallOMICFS*, and then we can
 The more detail parameters can see in [Here](https://www.rdocumentation.org/packages/matlabr/versions/1.5.2).
 
 When OMICFS is finished, it will write the selected features in *OMICFS_RF.csv*, then we can import the result by reading this csv file.
+
 ---
 ### Process:
 *CallOMICFS.R* ▶ *.dat* ▶ *MatlabCall.m* ▶ *OMICFS.m* ▶ *OMICFS_RF.csv* ▶ *CallOMICFS.R* ▶ *Select results*

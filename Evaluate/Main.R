@@ -13,15 +13,8 @@ assign("lb",unlist(read.csv(loadpath)[1]),envir = envdt)
 #### FS ####
 envfs <- new.env()
 assign("fs",list(data.frame(method = "FASSKM"  ,StopOption = "Iteration",stop_thr = 100,Mul = 3,lanbda = 5,stringsAsFactors = F),
-                 data.frame(method = "FASSAPC" ,stop_thr = 0.0000001,Mul = 3,lanbda = 5,stringsAsFactors = F),
-                 data.frame(method = "FAMICKM" ,stop_thr = 0.0000001,Mul = 3,lanbda = 5,stringsAsFactors = F),
-                 data.frame(method = "FAMIDKM" ,stop_thr = 0.0000001,Mul = 3,lanbda = 5,stringsAsFactors = F),
-                 data.frame(method = "FAMICAPC",stop_thr = 0.0000001,Mul = 3,lanbda = 5,stringsAsFactors = F),
-                 #data.frame(method = "mRMRT" ,stringsAsFactors = F),
                  data.frame(method = "mRMR"  ,stringsAsFactors = F),
-                 data.frame(method = "OMICFS",stringsAsFactors = F),
-                 data.frame(method = "MICNMS" ,IOUT = 0.5,stringsAsFactors = F),
-                 data.frame(method = "MICNMSKM" ,stop_thr = 0.0000001,IOUT = 0.5,stringsAsFactors = F)),envir = envfs)
+                 data.frame(method = "OMICFS",stringsAsFactors = F)),envir = envfs)
 
 #### Classifier #### 
 envcf <- new.env()
@@ -42,12 +35,9 @@ assign("cf",list(data.frame(name = "SVM",stringsAsFactors = F),
                  data.frame(name = "LogitRegression",stringsAsFactors = F)),
        envir = envcf)
 
-
-
 OuterRound <- 10
 P <- .9
 K <- c(2,4)
-
 
 # Parallel computing
 # Set the number of cores

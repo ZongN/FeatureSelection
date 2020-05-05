@@ -25,7 +25,7 @@ After all, you can run the *Main.R*.
 
 By using the env method, I think that the parameters can be controlled more simply. But the disadvantage is that it's more inconvenient to call.
 
---
+---
 
 ### Add new feature selection or Classifier methods
 

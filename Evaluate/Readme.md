@@ -31,7 +31,7 @@ By using the env method, I think that the parameters can be controlled more simp
 
 Like I say, I define as a simple code to merge several methods of the feature selection and the classifier methods. So, we can simply  add other methods too.
 
-If you want to add the new method into my code, just follow the ways below:
+If you want to add the new method into my code, just follow the ways below :
 1. Prepare the new feature selection or classifier method and put the folder in the right path.
 2. Prepare the call function and let it declare in *Lib.R*.
 3. In *Main.R*, add its parameters in *envfs* or *envcf* and follow the format.
